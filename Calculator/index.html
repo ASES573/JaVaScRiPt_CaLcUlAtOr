@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CALC</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+  .btn{
+  	width: 100px;
+  	height: 64px;
+  	font-size: 20px;
+  	text-align: center;
+  	font-family: monospace;
+  }
+  #textarea1
+  {
+  	 pointer-events: none;
+  	 resize: none; 
+  	 margin-top: 20px;
+  }
+ 
+  #calculator
+  {
+  	 border-radius: 89px;
+      margin: auto;
+      position: absolute;
+      top: -50; left: 0; bottom: -40; right: 0;
+      background-color: #fff;
+      width: 100%; 
+      height: 70%;
+      min-width: 300px;
+      max-width: 600px;
+      padding: 60px 0px 0px 54px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.39), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  #equal
+  {
+
+  	width: 215px;
+  	height: 64px;
+  	font-size: 30px;
+  	text-align: center;
+  	font-family: roboto;
+  }
+  #main{
+  color: red;
+  }
+ 
+  </style>
+</head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">JAVASCRIPT CALCULATOR</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+     <div class = "container-fluid">
+   <div id = "main">
+   
+    
+   <div id = "calculator">  
+     <input id = "display" type="textbox" class="textbox form-control" readonly>
+     <button class="button btn btn-success" value="AC">AC</button>
+    <button class="button btn btn-success" value="CE">CE</button>    
+	<button class="button btn btn-success" value="%">%</button>     
+    <button class="button btn btn-success" value="/">/</button>
+    <button class="button btn btn-success" value="7">7</button>
+    <button class="button btn btn-success" value="8">8</button>
+    <button class="button btn btn-success" value="9">9</button>
+    <button class="button btn btn-success" value="*">*</button>
+    <button class="button btn btn-success" value="4">4</button>
+    <button class="button btn btn-success"  value="5">5</button>
+    <button class="button btn btn-success" value="6">6</button>
+    <button class="button btn btn-success" value="-">-</button>
+    <button class="button btn btn-success" value="1">1</button>
+    <button class="button btn btn-success" value="2">2</button>
+    <button class="button btn btn-success" value="3">3</button>
+    <button class="button btn btn-success" value="+">+</button>
+    <button class="button btn btn-success" value=".">.</button>
+    <button id="1" class="button btn btn-success" value="0">0</button>
+    <button id = "equal" class="button btn btn-success" value="=">=</button>
+   </div>
+   </div>
+   </div>
+     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="scripts.js"></script>
+   
+  </body>
+</html>
